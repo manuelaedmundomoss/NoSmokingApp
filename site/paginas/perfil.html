@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoSmoking - Perfil</title>
+
+  <!-- Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/codigo/public/modulos/00_index/header.css" rel="stylesheet">
+  <link href="/codigo/public/modulos/02_perfil/perfil.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <!-- CABEÇALHO -->
+  <header style="background-color: #2c3e50;">
+    <nav class="navbar container-fluid align-items-center">
+      <!-- Logo -->
+      <div class="d-flex align-items-center">
+        <a class="nav-link d-flex align-items-center text-white" href="../00_index/index.html">
+          <img src="/codigo/public/assets/images/logoNoSmoke.png" alt="Logo" width="50" height="50" class="me-2">
+          <h1 class="h4 mb-0">NoSmoking</h1>
+        </a>
+      </div>
+
+      <div class="flex-grow-1 justify-content-center d-flex" id="menuMobile">
+        <ul class="nav flex-column flex-md-row align-items-center mb-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/codigo/public/modulos/01_projecaoFuturo/futuro.html">Projete seu
+              futuro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/codigo/public/modulos/01_portal_notícias/portal_noticias.html">Portal
+              de notícias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../02_depoimentos/depoimentos.html">Depoimentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/codigo/public/modulos/02_ranking/ranking.html">Ranking</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Ícone menu mobile -->
+      <div id="icone-menu-mobile" class="me-3" data-bs-toggle="offcanvas" data-bs-target="#menuMobileOffcanvas"
+        style="cursor: pointer;">
+        <i class="fa-solid fa-ellipsis-vertical text-white fs-3"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CABEÇALHO EM TELAS MENORES -->
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="menuMobileOffcanvas"
+    aria-labelledby="menuMobileLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="menuMobileLabel" style="color:white">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+    </div>
+
+    <div class="offcanvas-body d-flex flex-column justify-content-between" style="height: 100%;">
+      <ul class="nav flex-column mb-4">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/codigo/public/modulos/01_projecaoFuturo/futuro.html">Projete seu
+            futuro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/codigo/public/modulos/01_portal_notícias/portal_noticias.html">Portal de
+            notícias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../02_depoimentos/depoimentos.html">Depoimentos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/codigo/public/modulos/02_ranking/ranking.html">Ranking</a>
+        </li>
+      </ul>
+
+
+
+      <!-- Perfil -->
+      <div class="perfil">
+        <ul class="list-unstyled m-0">
+          <li><a class="dropdown-item text-white" href="/codigo/public/modulos/02_perfil/perfil.html">Meu perfil</a>
+          </li>
+          <li><a class="dropdown-item text-white" href="#" id="sair-conta-mobile">Sair da conta</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- FIM DO CABEÇALHO -->
+
+  <!-- Conteúdo do perfil -->
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mt-4 mb-3">
+      <h1 class="titulo mb-0">Perfil do Usuário</h1>
+      <button id="botao-logout" class="btn btn-outline-light" data-bs-toggle="tooltip" data-bs-placement="left"
+        title="Sair da conta">
+        <i class="fa-solid fa-right-from-bracket"></i>
+      </button>
+    </div>
+
+    <div class="perfil-container">
+      <div class="perfil-cabeçalho">
+        <div class="foto-container">
+          <img id="perfil-foto"
+            src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+            alt="Imagem de perfil genérica" alt="Foto de Perfil" class="perfil-foto">
+          <button class="editar-foto" id="editar-foto">
+            <i class="fas fa-camera"></i>
+          </button>
+          <input type="file" id="input-foto" accept="image/*" style="display: none;">
+        </div>
+
+        <div class="perfil-info">
+          <h2 class="perfil-nome" id="perfil-nome">Nome Exemplo</h2>
+          <p class="perfil-categoria" id="perfil-categoria">Categoria</p>
+          <p class="perfil-email" id="perfil-email">email@exemplo.com</p>
+          <p class="perfil-tel" id="perfil-tel">(11) 98765-4321</p>
+        </div>
+      </div>
+
+      <button id="editar-perfil" class="btn">Editar Perfil</button>
+
+      <form id="perfil-form" class="editar-form">
+        <div class="form-grupo">
+          <label for="nome">Nome completo</label>
+          <input type="texto" id="nome" class="form-controle" value="Nome Exemplo">
+        </div>
+
+        <div class="form-grupo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" class="form-controle" value="email@exemplo.com">
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="phone" class="form-controle" value="(11) 98765-4321">
+        </div>
+
+        <div id="profissional-extra" style="display: none;">
+          <div class="form-grupo">
+            <label for="especialidade">Especialidade</label>
+            <input type="text" id="especialidade" class="form-controle" placeholder="Ex: Pneumologista">
+          </div>
+
+          <div class="form-grupo">
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" class="form-controle" placeholder="Ex: São Paulo">
+          </div>
+
+          <div class="form-grupo">
+            <label for="estado">Estado</label>
+            <input type="text" id="estado" class="form-controle" placeholder="Ex: SP">
+          </div>
+
+          <div class="form-grupo">
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" class="form-controle" rows="3"
+              placeholder="Breve descrição profissional"></textarea>
+          </div>
+
+          <div class="form-grupo">
+            <label for="whatsapp">WhatsApp para contato</label>
+            <input type="text" id="whatsapp" class="form-controle" placeholder="(00) 00000-0000">
+          </div>
+
+        </div>
+
+        <div class="form-acoes">
+          <button type="button" id="cancelar" class="btn btn-outline">Cancelar</button>
+          <button type="submit" class="btn">Salvar Alterações</button>
+        </div>
+      </form>
+    </div>
+    <!-- PAINEL DE SELOS E PONTOS -->
+    <section class="painel-selos mt-4 p-3 rounded bg-light shadow">
+      <h4 class="mb-3">Conquistas do Usuário</h4>
+
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-4">
+        <!-- Pontuação atual -->
+        <div class="bg-white p-3 rounded border w-100 text-center">
+          <h5>Pontos acumulados</h5>
+          <p class="display-6 m-0" id="pontosPerfil">250</p>
+        </div>
+
+        <!-- Selos conquistados -->
+        <div class="bg-white p-3 rounded border w-100 text-center">
+          <h5>Seus Selos</h5>
+          <div id="selosPerfil" class="d-flex justify-content-center gap-2 fs-3 mt-2">
+            <!-- Os emojis serão inseridos aqui via JS -->
+          </div>
+        </div>
+
+        <!-- Legenda de selos -->
+        <div class="bg-white p-3 rounded border w-100">
+          <h5>Como conquistar</h5>
+          <ul class="list-unstyled mb-0">
+            <li>🥉 Bronze — a partir de 50 pontos</li>
+            <li>🥈 Prata — a partir de 100</li>
+            <li>🥇 Ouro — a partir de 200</li>
+            <li>💎 Diamante — a partir de 250</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/codigo/public/modulos/00_index/header.js"></script>
+  <script src="/codigo/public/modulos/02_perfil/perfil.js"></script>
+</body>
+
+</html>

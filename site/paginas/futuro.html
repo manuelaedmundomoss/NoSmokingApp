@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title href="/codigo/public/modulos/00_index/index.html">NoSmoking - Diário</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoSmoking - Projeção do futuro</title>
 
-  <!-- LINKS -->
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- JavaScript -->
+  <script src="/codigo/public/modulos/00_index/header.js"></script>
+  <script src="/codigo/public/modulos/01_projecaoFuturo/projecao.js"></script>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/codigo/public/modulos/00_index/header.css">
+  <link rel="stylesheet" href="/codigo/public/modulos/01_projecaoFuturo/projecaoFuturo.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="/codigo/public/modulos/00_index/header.css" rel="stylesheet" type="text/css" />
+
 
 </head>
 
 <body>
-   <!-- CABEÇALHO -->
+
+  <!-- CABEÇALHO -->
   <header style="background-color: #2c3e50;">
     <nav class="navbar container-fluid align-items-center">
       <!-- Logo -->
@@ -58,21 +69,22 @@
 
 
       <!-- Perfil -->
-      <div class="perfil position-relative">
-        <i class="fa-solid fa-circle-user text-light fs-1" id="perfil" style="cursor: pointer;"></i>
-        <div class="menu-perfil position-absolute bg-white shadow rounded" id="menuPerfil"
-          style="top: 50px; right: 0; z-index: 1000; display: none;">
-          <ul class="list-unstyled m-0">
-            <li class="text-end">
-              <button id="fechar-perfil" class="btn border-0 text-dark" style="margin-right: 5px;"
-                title="Fechar">✕</button>
-            </li>
-            <li><a class="dropdown-item" href="/codigo/public/modulos/02_perfil/perfil.html" style="color:black">Meu
-                perfil</a></li>
-            <li><a class="dropdown-item" href="#" id="sair-conta" style="color:black">Sair da conta</a></li>
-          </ul>
+      <div class="cabecalho-pontos-perfil d-flex align-items-center gap-3">
+        <div class="perfil position-relative">
+          <i class="fa-solid fa-circle-user text-light fs-1" id="perfil" style="cursor: pointer;"></i>
+          <div class="menu-perfil position-absolute bg-white shadow rounded" id="menuPerfil"
+            style="top: 50px; right: 0; z-index: 1000; display: none;">
+            <ul class="list-unstyled m-0">
+              <li class="text-end">
+                <button id="fechar-perfil" class="btn border-0 text-dark" style="margin-right: 5px;"
+                  title="Fechar">✕</button>
+              </li>
+              <li><a class="dropdown-item" href="/codigo/public/modulos/02_perfil/perfil.html" style="color:black">Meu
+                  perfil</a></li>
+              <li><a class="dropdown-item" href="#" id="sair-conta" style="color:black">Sair da conta</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
       </div>
 
       <!-- Ícone menu mobile -->
@@ -121,42 +133,53 @@
       </div>
     </div>
   </div>
-<!-- FIM DO CABEÇALHO -->
+  <!-- FIM DO CABEÇALHO -->
 
-  <div id="diario-fumante"
-    style="max-width: 700px; margin: 40px auto; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
-    <h2 style="color: #333; font-family: Poppins;">Meu Diário</h2>
-    <form id="form-diario">
-      <input type="text" id="titulo" placeholder="Título do dia" required
-        style="width: 100%; margin-bottom: 10px; padding: 10px; border-radius: 5px;">
-      <textarea id="conteudo" rows="5" placeholder="Escreva como foi seu dia..." required
-        style="width: 100%; margin-bottom: 10px; padding: 10px; border-radius: 5px;"></textarea>
-      <select id="humor" required style="width: 100%; margin-bottom: 10px; padding: 10px; border-radius: 5px;">
-        <option value="">Como você está se sentindo?</option>
-        <option value="Feliz">😊 Feliz</option>
-        <option value="Ansioso">😰 Ansioso(a)</option>
-        <option value="Esperançoso">🙏 Esperançoso(a)</option>
-        <option value="Irritado">😠 Irritado(a)</option>
-        <option value="Confiante">💪 Confiante</option>
-      </select>
-      <button type="submit"
-        style="padding: 10px 20px; background-color: #a8c9a1; color: white; border: none; border-radius: 5px; cursor: pointer;">Salvar
-      </button>
-      <button type="button" id="btn-apagar"
-        style="padding: 10px 20px; background-color: #34495e;; color: white; border: none; border-radius: 5px; cursor: pointer;">Apagar
-      </button>
+  <!-- Título principal -->
+  <section class="news-header">
+    <h2>Projete seu futuro</h2>
+    <p>Visualize os seus benefícios ao deixar de fumar</p>
+  </section>
+
+  <!-- Projeção de dados -->
+  <main>
+    <div id="projecao">
+      <div class="item-projecao"><span id="economia"></span> economizados</div>
+      <div class="item-projecao">Cigarros evitados <span id="cigarros-evitados"></span></div>
+    </div>
+
+
+    <h3 id="titulo">Melhorias na saúde</h3>
+    <ul id="lista-saude"></ul>
+  </main>
+
+  <!-- Informações usadas -->
+  <article>
+    <h3>Informações usadas</h3>
+    <form id="informacoes-do-fumante">
+      <ul>
+        <li>Quantidade de cigarro por maço <input type="number" id="cigarroXmaco" min="1" required></li>
+        <li>Preço por maço <input type="number" id="preco-maco" step="0.01" min="0" required></li>
+        <li>Data de parada <input type="datetime-local" id="data-de-parada" required></li>
+        <li>
+          Seu perfil de uso <input type="number" id="perfil-de-uso" min="1" max="3" required>
+          <i class="far fa-question-circle simbolo"></i>
+          <div class="caixa-flutuante" id="informacoes-sobre-uso">
+            <h3>Seu perfil de uso determina com que costume você fuma</h3>
+            <p>
+              1 - Fuma todos os dias<br>
+              2 - Fuma ocasionalmente<br>
+              3 - Fuma em situações de estresse
+            </p>
+          </div>
+        </li>
+        <li id="campo-cigarroXdia">Cigarros por dia <input type="number" id="cigarroXdia" required></li>
+      </ul>
+      <ul id="campos-extras"></ul>
+      <button type="submit" id="btn-informacoes">Calcular</button>
     </form>
-    <hr style="margin: 30px 0;">
-    <h3 style="font-family: Poppins;"> Dias anteriores:</h3>
-    <div id="lista-entradas"></div>
-
-  </div>
-
+  </article>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<script src="/codigo/public/modulos/00_index/header.js"></script>
-<script src="/codigo/public/modulos/01_diarioFumante/diario.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
-</script>
-  <script src="/codigo/public/modulos/02_pontuacaoSelos/pontuacao.js"></script>
-  <script src="/codigo/public/modulos/02_pontuacaoSelos/selos.js"></script>
+
+</html>

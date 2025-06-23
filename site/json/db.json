@@ -6,35 +6,8 @@
       "titulo": "Décimo dia sem fumar",
       "conteudo": "Sinto que estou mais forte a cada dia. Hoje consegui sair com amigos sem sentir tanta vontade de fumar. Estou orgulhosa de mim mesma!",
       "humor": "Esperançoso(a)",
-      "usuario": "Marcela",
-      "usuarioId": "6278"
-    },
-    {
-      "id": "ec09",
-      "titulo": "sábado",
-      "conteudo": "meu dia foi ótimo!",
-      "humor": "Feliz",
-      "data": 1750540774448,
-      "usuario": "manuela",
-      "usuarioId": "37f4"
-    },
-    {
-      "id": "d434",
-      "titulo": "xxx",
-      "conteudo": "xxx",
-      "humor": "Feliz",
-      "data": 1750596634191,
-      "usuario": "teste",
-      "usuarioId": "bc58"
-    },
-    {
-      "id": "363c",
-      "titulo": "Estou ficando louca!!",
-      "conteudo": "Estou suando frio, acho que estou começando a sentir falta do cigarro... Ainda assim vou permancer firme e continuar tentando!",
-      "humor": "Ansioso",
-      "data": 1750603459888,
-      "usuario": "Luiza",
-      "usuarioId": "879b"
+      "usuario": "Fumante1",
+      "usuarioId": "285c"
     }
   ],
   "perfisDeUso": [
@@ -144,116 +117,42 @@
       "senha": "123456",
       "categoria": "fumante",
       "logado": false,
-      "pontos": 0
-    },
-    {
-      "id": "52ea",
-      "nome": "dani",
-      "email": "dandamuuujuj@gmail.com",
-      "senha": "123456",
-      "categoria": "ex-fumante",
-      "logado": false
-    },
-    {
-      "id": "0bdb",
-      "nome": "samuel",
-      "email": "samuel@gmail",
-      "senha": "123456",
-      "categoria": "fumante",
-      "logado": false,
-      "precoPorMaco": 12,
-      "cigarrosPorMaco": 12,
-      "dataDeParada": "2002-02-15T13:26",
+      "precoPorMaco": 120,
+      "cigarrosPorMaco": 2,
+      "dataDeParada": "2025-06-10T22:56",
       "perfilDeUso": 1,
-      "cigarrosPorDia": 100,
       "cigarrosPorEvento": null,
       "eventosPorMes": null,
       "cigarrosEstimadosPorSituacao": null,
       "situacoesPorMes": null,
-      "tempoSemFumar": "2020-12-12T13:00:00.000Z"
+      "cigarrosPorDia": 23,
+      "tempoSemFumar": "2025-06-10T19:57:00.000Z",
+      "pontos": 45
     },
     {
-      "id": "37f4",
-      "nome": "manuela",
-      "email": "manuela@email.com",
-      "senha": "123",
-      "categoria": "ex-fumante",
-      "logado": true,
-      "precoPorMaco": 100,
-      "cigarrosPorMaco": 100,
-      "dataDeParada": "2025-06-03T17:24",
-      "perfilDeUso": 1,
-      "cigarrosPorDia": 10,
-      "cigarrosEstimadosPorSituacao": null,
-      "situacoesPorMes": null,
-      "cigarrosPorEvento": null,
-      "eventosPorMes": null,
-      "pontos": 0
-    },
-    {
-      "id": "1b8c",
-      "nome": "saude",
-      "email": "profissionalsaude@gmail.com",
+      "id": "6ca4",
+      "nome": "ProfissionalSaude1",
+      "email": "profissionalsaude1@exemplo.com",
       "senha": "123456",
       "categoria": "profissional",
       "logado": false,
-      "tempoSemFumar": "2000-03-10T03:00:00.000Z"
-    },
-    {
-      "id": "879b",
-      "nome": "Luiza",
-      "email": "lulu@lulu.com",
-      "senha": "luiza123",
-      "categoria": "fumante",
-      "logado": false,
-      "tempoSemFumar": "2025-06-20T16:45:00.000Z"
-    },
-    {
-      "id": "3f5f",
-      "nome": "Julia Pinheiro",
-      "email": "julu@julu.com",
-      "senha": "luiza123",
-      "categoria": "fumante",
-      "logado": false,
-      "tempoSemFumar": "2025-06-22T04:57:00.000Z"
-    },
-    {
-      "id": "3f27",
-      "nome": "Pops",
-      "email": "pulu@julu.com",
-      "senha": "luiza123",
-      "categoria": "fumante",
-      "logado": false,
-      "tempoSemFumar": "2025-06-02T15:15:00.000Z",
-      "pontos": 250
-    },
-    {
-      "id": "fb93",
-      "nome": "TestandoDENOVO",
-      "email": "testando@DENOVO",
-      "senha": "123456",
-      "categoria": "fumante",
-      "logado": false,
-      "pontos": 250,
-      "selos": [
-        "bronze",
-        "prata",
-        "ouro",
-        "diamante"
-      ]
-    },
-    {
-      "id": "bd51",
-      "nome": "UltimoTeste",
-      "email": "ultima@vez",
-      "senha": "123456",
-      "categoria": "fumante",
-      "logado": true,
-      "pontos": 115,
-      "selos": [
-        "bronze",
-        "prata"
-      ]
+      "pontos": 0,
+      "telefone": "3771-2159",
+      "especialidade": "Pneumologista",
+      "cidade": "Diamantina",
+      "estado": "MG",
+      "descricao": "Atencioso, motivador e acessível. Busca criar vínculos de confiança com seus pacientes, apoiando cada conquista no processo de parar de fumar.",
+      "whatsapp": "3199998-0078",
+      "tempoSemFumar": "2025-06-03T10:05:00.000Z",
+      "precoPorMaco": 6,
+      "cigarrosPorMaco": 4,
+      "dataDeParada": "2025-06-03T23:06",
+      "perfilDeUso": 1,
+      "cigarrosPorEvento": null,
+      "eventosPorMes": null,
+      "cigarrosEstimadosPorSituacao": null,
+      "situacoesPorMes": null,
+      "cigarrosPorDia": 2
     }
   ],
   "noticias": [
@@ -271,7 +170,7 @@
       "paisId": 1,
       "fonteId": 1,
       "popularidade": 150,
-      "visualizacoes": 265
+      "visualizacoes": 282
     },
     {
       "id": "2",
@@ -303,7 +202,7 @@
       "paisId": 1,
       "fonteId": 1,
       "popularidade": 0,
-      "visualizacoes": 176
+      "visualizacoes": 206
     },
     {
       "id": "4",
@@ -319,7 +218,7 @@
       "paisId": 3,
       "fonteId": 3,
       "popularidade": 10,
-      "visualizacoes": 1786
+      "visualizacoes": 1925
     }
   ],
   "filtros": {
@@ -454,12 +353,12 @@
       "whatsapp": "(85) 91234-8765"
     },
     {
-      "id": "1750629566169",
+      "id": "1750644170408",
       "nome": "ProfissionalSaude1",
       "especialidade": "Pneumologista",
       "cidade": "Diamantina",
       "estado": "MG",
-      "descricao": "Tranquilo, respeitoso e dedicado. Atua com foco no bem-estar emocional do paciente, incentivando pequenas vitórias no dia a dia.",
+      "descricao": "Atencioso, motivador e acessível. Busca criar vínculos de confiança com seus pacientes, apoiando cada conquista no processo de parar de fumar.",
       "whatsapp": "3199998-0078",
       "email": "profissionalsaude1@exemplo.com",
       "certificadoVerificado": false,

@@ -47,7 +47,7 @@ function mostrarDesafioSemanal() {
         <form id="form-desafio">
           <input type="checkbox" id="concluido" name="concluido" style="width: 20px; height: 20px;" ${desafioJaEnviado ? 'disabled' : ''}>
           <label for="concluido" style="font-size: 18px; margin-left: 5px; color: black;">Completei o desafio!</label><br>
-          <button type="submit" class="btn-desafio" ${desafioJaEnviado ? 'disabled' : ''}>${desafioJaEnviado ? 'Desafio já enviado' : 'Enviar desafio'}</button>
+          <button type="submit" id="botaoDesafio" class="btn-desafio" ${desafioJaEnviado ? 'disabled' : ''}>${desafioJaEnviado ? 'Desafio já enviado' : 'Enviar desafio'}</button>
         </form>
 
         <!-- Modal flutuante -->
