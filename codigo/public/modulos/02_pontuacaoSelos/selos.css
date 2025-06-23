@@ -1,0 +1,53 @@
+/* ÍNICIO das definições gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+html, body {
+  height: 100%;
+  width: 100%;
+}
+  
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+button:hover { 
+  transform: translateY(-2px);
+}
+
+:root { /* CORES PRINCIPAIS DO SITE */
+  --verde-escuro: #5f7a59;
+  --verde-claro: #a8c9a1;
+  --azul-escuro: #2c3e50;
+  --azul-bem-claro:#a9c9e7;
+  --azul-claro: #45607a;
+  --cinza-escuro: #6d6d6d;
+  --cinza-claro: #e0e0e0;
+  --azul-link: #0043a7;
+}
+
+.perfil i.fa-circle-user {
+  font-size: 3rem; 
+  color: var(--cinza-claro); 
+  transition: all 0.3s ease; 
+}
+
+.perfil i.fa-circle-user:hover {
+  color: white; 
+  transform: scale(1.1); 
+}
+
+/* FIM das definições gerais */
+
+/* Conteúdo principal */
+#containerPontos {
+    padding: 3rem;
+    background-color: #34495e;
+    justify-self: center;
+    border-radius: 5px;
+}

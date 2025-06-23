@@ -1,0 +1,132 @@
+/* ====================== CABEÇALHO ====================== */
+:root {
+  --verde-escuro: #5f7a59;
+  --verde-claro: #a8c9a1;
+  --azul-escuro: #2c3e50;
+  --azul-bem-claro: #a9c9e7;
+  --azul-claro: #45607a;
+  --cinza-escuro: #6d6d6d;
+  --cinza-claro: #e0e0e0;
+  --azul-link: #0043a7;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--cinza-claro);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--azul-escuro);
+  padding: 1rem;
+}
+
+nav.navbar {
+  width: 100%;
+  align-items: center;
+}
+
+a.nav-link.d-flex {
+  color: white;
+  text-decoration: none;
+}
+
+a.nav-link.d-flex h1 {
+  margin-bottom: 0;
+}
+
+#menuMobile {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+#menuMobile ul.nav {
+  gap: 2rem;
+}
+
+#menuMobile ul.nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+#menuMobile ul.nav li a:hover {
+  text-decoration: underline;
+}
+
+#icone-menu-mobile {
+  display: none;
+  cursor: pointer;
+}
+
+/* Pontuação dentro do offcanvas */
+#PontosF {
+  background-color: #222b33;
+  border-radius: 7px;
+  padding: 0.3rem 0.8rem;
+  width: fit-content;
+}
+
+.pontuacao {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  color: #ebebeb;
+}
+
+.pontuacao li {
+  margin: 0;
+  padding: 0;
+}
+
+#areaSelos {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  gap: 6px;
+}
+
+#areaSelos li {
+  list-style: none;
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: inline;
+}
+
+/* Perfil offcanvas */
+.perfil ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.perfil ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.perfil ul li a:hover {
+  color: var(--azul-link);
+  font-weight: bold;
+}
+
+@media (max-width: 1066.98px) {
+  #menuMobile {
+    display: none !important;
+  }
+
+  #icone-menu-mobile {
+    display: block !important;
+  }
+
+  .cabecalho-pontos-perfil {
+    display: none !important;
+  }
+}

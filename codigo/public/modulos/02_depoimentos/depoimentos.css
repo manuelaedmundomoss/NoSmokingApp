@@ -1,0 +1,94 @@
+/* RESET E GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #dadada;
+  color: #333;
+}
+
+/* WRAPPER */
+#wrapper {
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+/* TÍTULOS */
+#titulo,
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+/* FORMULÁRIO */
+#form-depoimento {
+  background-color: rgb(236, 236, 236);
+  padding: 2rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 3rem;
+}
+
+input,
+textarea,
+#identidade {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+}
+
+
+
+/* Botão */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0.7rem;
+  background-color: #a8c9a1;
+  color: #2c3e50;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #94b78e;
+}
+
+/* LISTA DEPOIMENTOS */
+#lista-depoimentos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* CARD DEPOIMENTO */
+.depoimento {
+  background-color: rgb(236, 236, 236);
+  padding: 1.5rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* AUTOR E DATA */
+.autor {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.data {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+

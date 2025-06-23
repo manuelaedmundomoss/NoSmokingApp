@@ -1,0 +1,608 @@
+{
+  "diarioFumante": [
+    {
+      "id": "1",
+      "data": 1713571200000,
+      "titulo": "Décimo dia sem fumar",
+      "conteudo": "Sinto que estou mais forte a cada dia. Hoje consegui sair com amigos sem sentir tanta vontade de fumar. Estou orgulhosa de mim mesma!",
+      "humor": "Esperançoso(a)",
+      "usuario": "Marcela",
+      "usuarioId": "6278"
+    },
+    {
+      "id": "ec09",
+      "titulo": "sábado",
+      "conteudo": "meu dia foi ótimo!",
+      "humor": "Feliz",
+      "data": 1750540774448,
+      "usuario": "manuela",
+      "usuarioId": "37f4"
+    },
+    {
+      "id": "d434",
+      "titulo": "xxx",
+      "conteudo": "xxx",
+      "humor": "Feliz",
+      "data": 1750596634191,
+      "usuario": "teste",
+      "usuarioId": "bc58"
+    },
+    {
+      "id": "363c",
+      "titulo": "Estou ficando louca!!",
+      "conteudo": "Estou suando frio, acho que estou começando a sentir falta do cigarro... Ainda assim vou permancer firme e continuar tentando!",
+      "humor": "Ansioso",
+      "data": 1750603459888,
+      "usuario": "Luiza",
+      "usuarioId": "879b"
+    }
+  ],
+  "perfisDeUso": [
+    {
+      "id": "1",
+      "tipo": "diario",
+      "descricao": "Fuma todos os dias, com uma média fixa de cigarros por dia.",
+      "variaveis": [
+        "cigarrosPorDia"
+      ]
+    },
+    {
+      "id": "2",
+      "tipo": "eventual",
+      "descricao": "Fuma em festas, encontros ou eventos ocasionais.",
+      "variaveis": [
+        "cigarrosPorEvento",
+        "eventosPorMes"
+      ]
+    },
+    {
+      "id": "3",
+      "tipo": "emocional",
+      "descricao": "Fuma em situações de estresse ou ansiedade, de forma irregular.",
+      "variaveis": [
+        "cigarrosEstimadosPorSituacao",
+        "situacoesPorMes"
+      ]
+    }
+  ],
+  "projecaoDeSaude": [
+    {
+      "id": "1",
+      "tempoEmDias": 1,
+      "descricao": "Após 1 dia sem fumar, os níveis de monóxido de carbono no sangue caem ao normal.",
+      "link": "https://bhtorax.com.br/12-vantagens-que-sao-adquiridas-ao-parar-de-fumar/"
+    },
+    {
+      "id": "2",
+      "tempoEmDias": 7,
+      "descricao": "Após 1 semana, a nicotina acumulada é eliminada do organismo, facilitando o transporte de oxigênio.",
+      "link": "https://clinicasense.med.br/artigos/tabagismo-e-rastreio-de-cancer-de-pulmao"
+    },
+    {
+      "id": "3",
+      "tempoEmDias": 21,
+      "descricao": "Após 3 semanas, a respiração fica mais fácil e a circulação sanguínea melhora.",
+      "link": "https://www.ribeiraopreto.sp.gov.br/portal/pdf/saude154202108.pdf"
+    },
+    {
+      "id": "4",
+      "tempoEmDias": 90,
+      "descricao": "Após 3 meses, a função pulmonar já está visivelmente melhor.",
+      "link": "https://bhtorax.com.br/12-vantagens-que-sao-adquiridas-ao-parar-de-fumar/"
+    },
+    {
+      "id": "5",
+      "tempoEmDias": 365,
+      "descricao": "Após 1 ano, o risco de doenças cardíacas reduz pela metade.",
+      "link": "https://www.h9j.com.br/blog/9-beneficios-de-parar-de-fumar/"
+    },
+    {
+      "id": "6",
+      "tempoEmDias": 1825,
+      "descricao": "Após 5 anos, o risco de AVC é reduzido ao de um não fumante.",
+      "link": "https://cdd.org.br/noticias/e-se-eu-parar-de-fumar-beneficios/"
+    },
+    {
+      "id": "7",
+      "tempoEmDias": 3650,
+      "descricao": "Após 10 anos, o risco de morrer de câncer de pulmão é aproximadamente metade do de um fumante.",
+      "link": "https://cdd.org.br/noticias/e-se-eu-parar-de-fumar-beneficios/"
+    },
+    {
+      "id": "8",
+      "tempoEmDias": 5475,
+      "descricao": "Após 15 anos, o risco de doença coronariana é semelhante ao de alguém que nunca fumou.",
+      "link": "https://cdd.org.br/noticias/e-se-eu-parar-de-fumar-beneficios/"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Exfumante1",
+      "email": "Exfumante1@exemplo.com",
+      "senha": "123456",
+      "categoria": "ex-fumante",
+      "precoPorMaco": 12,
+      "cigarrosPorMaco": 200,
+      "dataDeParada": "1961-01-31T15:51",
+      "perfilDeUso": 1,
+      "cigarrosPorDia": 100,
+      "logado": false,
+      "pontos": 254,
+      "selos": [
+        "bronze",
+        "prata",
+        "ouro",
+        "diamante"
+      ],
+      "tempoSemFumar": "2025-06-19T15:00:00.000Z"
+    },
+    {
+      "id": "285c",
+      "nome": "Fumante1",
+      "email": "fumante1@exemplo.com",
+      "senha": "123456",
+      "categoria": "fumante",
+      "logado": false,
+      "pontos": 0
+    },
+    {
+      "id": "52ea",
+      "nome": "dani",
+      "email": "dandamuuujuj@gmail.com",
+      "senha": "123456",
+      "categoria": "ex-fumante",
+      "logado": false
+    },
+    {
+      "id": "0bdb",
+      "nome": "samuel",
+      "email": "samuel@gmail",
+      "senha": "123456",
+      "categoria": "fumante",
+      "logado": false,
+      "precoPorMaco": 12,
+      "cigarrosPorMaco": 12,
+      "dataDeParada": "2002-02-15T13:26",
+      "perfilDeUso": 1,
+      "cigarrosPorDia": 100,
+      "cigarrosPorEvento": null,
+      "eventosPorMes": null,
+      "cigarrosEstimadosPorSituacao": null,
+      "situacoesPorMes": null,
+      "tempoSemFumar": "2020-12-12T13:00:00.000Z"
+    },
+    {
+      "id": "37f4",
+      "nome": "manuela",
+      "email": "manuela@email.com",
+      "senha": "123",
+      "categoria": "ex-fumante",
+      "logado": true,
+      "precoPorMaco": 100,
+      "cigarrosPorMaco": 100,
+      "dataDeParada": "2025-06-03T17:24",
+      "perfilDeUso": 1,
+      "cigarrosPorDia": 10,
+      "cigarrosEstimadosPorSituacao": null,
+      "situacoesPorMes": null,
+      "cigarrosPorEvento": null,
+      "eventosPorMes": null,
+      "pontos": 0
+    },
+    {
+      "id": "1b8c",
+      "nome": "saude",
+      "email": "profissionalsaude@gmail.com",
+      "senha": "123456",
+      "categoria": "profissional",
+      "logado": false,
+      "tempoSemFumar": "2000-03-10T03:00:00.000Z"
+    },
+    {
+      "id": "879b",
+      "nome": "Luiza",
+      "email": "lulu@lulu.com",
+      "senha": "luiza123",
+      "categoria": "fumante",
+      "logado": false,
+      "tempoSemFumar": "2025-06-20T16:45:00.000Z"
+    },
+    {
+      "id": "3f5f",
+      "nome": "Julia Pinheiro",
+      "email": "julu@julu.com",
+      "senha": "luiza123",
+      "categoria": "fumante",
+      "logado": false,
+      "tempoSemFumar": "2025-06-22T04:57:00.000Z"
+    },
+    {
+      "id": "3f27",
+      "nome": "Pops",
+      "email": "pulu@julu.com",
+      "senha": "luiza123",
+      "categoria": "fumante",
+      "logado": false,
+      "tempoSemFumar": "2025-06-02T15:15:00.000Z",
+      "pontos": 250
+    },
+    {
+      "id": "fb93",
+      "nome": "TestandoDENOVO",
+      "email": "testando@DENOVO",
+      "senha": "123456",
+      "categoria": "fumante",
+      "logado": false,
+      "pontos": 250,
+      "selos": [
+        "bronze",
+        "prata",
+        "ouro",
+        "diamante"
+      ]
+    },
+    {
+      "id": "bd51",
+      "nome": "UltimoTeste",
+      "email": "ultima@vez",
+      "senha": "123456",
+      "categoria": "fumante",
+      "logado": true,
+      "pontos": 115,
+      "selos": [
+        "bronze",
+        "prata"
+      ]
+    }
+  ],
+  "noticias": [
+    {
+      "id": "1",
+      "titulo": "Novo Tratamento Promissor Contra o Tabagismo",
+      "descricao": "Cientistas desenvolvem terapia inovadora para ajudar fumantes a largarem o vício.",
+      "conteudo": "Em 10 de maio de 2024, o Ministério da Saúde anunciou um avanço significativo no combate ao tabagismo: um novo método que combina terapia genética com acompanhamento psicológico. Essa abordagem inovadora visa tratar a dependência da nicotina de forma mais eficaz, atuando tanto nos aspectos biológicos quanto nos comportamentais do vício. A terapia genética busca identificar e modificar genes associados à predisposição ao tabagismo, enquanto o suporte psicológico oferece estratégias para lidar com os gatilhos emocionais e sociais que levam ao consumo de tabaco. Essa combinação promete aumentar as taxas de sucesso na cessação do tabagismo, especialmente entre aqueles que já tentaram parar de fumar anteriormente sem sucesso. Esse desenvolvimento está alinhado com as diretrizes da Organização Mundial da Saúde (OMS), que, em julho de 2024, lançou um conjunto de intervenções contra o tabagismo, incluindo apoio comportamental, intervenções digitais e tratamentos farmacológicos. A OMS destaca que a combinação de farmacoterapia com intervenções comportamentais aumenta significativamente as taxas de sucesso no abandono do tabagismo",
+      "data": "2024-05-10",
+      "fonte": "Ministério da Saúde",
+      "autor": "Mariana Souza",
+      "imagem": "https://maceioalgovbr.dhost.cloud/uploads/imagens/Maceio-cria-Nucleo-de-Cessacao-ao-Tabagismo-exclusivo-para-servidores.jpg",
+      "anoId": 2,
+      "assuntoId": 4,
+      "paisId": 1,
+      "fonteId": 1,
+      "popularidade": 150,
+      "visualizacoes": 265
+    },
+    {
+      "id": "2",
+      "titulo": "OMS Alerta Para Aumento do Tabagismo em Jovens",
+      "descricao": "Relatório aponta crescimento preocupante entre adolescentes.",
+      "conteudo": "Em 22 de fevereiro de 2025, a Organização Mundial da Saúde (OMS) emitiu um alerta preocupante: o tabagismo entre adolescentes voltou a crescer. A instituição enfatiza a necessidade urgente de campanhas educativas para conter essa tendência. A OMS destaca que a indústria do tabaco tem adotado táticas agressivas para atrair os jovens, como a introdução de sabores atrativos, embalagens coloridas e o uso de personagens populares em seus produtos. Essas estratégias visam tornar os produtos de tabaco mais atraentes para o público jovem, facilitando a iniciação precoce ao tabagismo. Além disso, a OMS sugere medidas mais rigorosas, como a proibição da venda de tabaco para pessoas nascidas após determinados anos, visando criar uma 'geração sem tabaco'. Estudos indicam que tais políticas poderiam evitar milhões de mortes relacionadas ao tabagismo até o final do século.",
+      "data": "2023-05-15",
+      "fonte": "OMS",
+      "autor": "Lucas Fernandes",
+      "imagem": "https://hospitalsantamonica.com.br/wp-content/uploads/2018/10/tabagismo-na-adolescencia-entenda-o-risco-de-psicose-e-como-tratar.jpg",
+      "anoId": 3,
+      "assuntoId": 5,
+      "paisId": 5,
+      "fonteId": 2,
+      "popularidade": 100,
+      "visualizacoes": 347
+    },
+    {
+      "id": "3",
+      "titulo": "Estudo Revela Queda no Número de Fumantes no Brasil",
+      "descricao": "Dados mostram redução significativa nos últimos anos.",
+      "conteudo": "Em 18 de setembro de 2023, o Instituto Nacional de Câncer (INCA) divulgou um relatório indicando uma redução significativa no número de fumantes no Brasil. Desde 2010, houve uma queda de 25% na prevalência de fumantes no país. Essa diminuição é atribuída a políticas públicas eficazes, como a proibição de fumar em ambientes fechados, campanhas educativas, aumento de impostos sobre produtos de tabaco e a oferta de tratamento gratuito para quem deseja parar de fumar. Em 1989, 35% da população adulta brasileira era fumante; em 2019, esse número caiu para 12,6%. Apesar dos avanços, o tabagismo ainda representa um desafio para a saúde pública no Brasil, causando aproximadamente 145 mil mortes anuais e gerando custos significativos para o sistema de saúde.",
+      "imagem": "https://previews.123rf.com/images/sarawuth702/sarawuth7021605/sarawuth702160500054/57651593-gr%C3%A1fico-de-cigarros-infogr%C3%A1ficos-de-cigarros-vetor.jpg",
+      "data": "2023-09-18",
+      "fonte": "INCA",
+      "autor": "Joana Lima",
+      "anoId": 1,
+      "assuntoId": 5,
+      "paisId": 1,
+      "fonteId": 1,
+      "popularidade": 0,
+      "visualizacoes": 176
+    },
+    {
+      "id": "4",
+      "titulo": "China Impõe Leis Rígidas Contra o Tabagismo",
+      "descricao": "Nova legislação visa reduzir fumantes em locais públicos.",
+      "conteudo": "Em 5 de janeiro de 2025, a China implementou uma legislação rigorosa para combater o tabagismo. As autoridades chinesas aprovaram uma lei que proíbe o fumo em locais fechados e impõe multas severas para quem descumprir as regras. A nova legislação proíbe fumar em todos os espaços públicos fechados, como restaurantes, bares, escritórios e transportes públicos. Além disso, a lei proíbe a propaganda de cigarros e exige que as embalagens de produtos de tabaco exibam advertências de saúde ocupando pelo menos metade de sua superfície. As penalidades para quem violar a lei incluem multas significativas e, em casos de reincidência, a possibilidade de fechamento do estabelecimento. Essa medida faz parte dos esforços da China para alinhar-se às práticas internacionais de controle do tabaco e reduzir os altos índices de tabagismo no país.",
+      "data": "2025-01-05",
+      "fonte": "CNN Saúde",
+      "autor": "Wei Zhang",
+      "imagem": "https://cmarinho.wordpress.com/files/2007/06/wchina31.jpg",
+      "anoId": 3,
+      "assuntoId": 3,
+      "paisId": 3,
+      "fonteId": 3,
+      "popularidade": 10,
+      "visualizacoes": 1786
+    }
+  ],
+  "filtros": {
+    "ano": [
+      {
+        "id": 1,
+        "nome": "2023"
+      },
+      {
+        "id": 2,
+        "nome": "2024"
+      },
+      {
+        "id": 3,
+        "nome": "2025"
+      }
+    ],
+    "assunto": [
+      {
+        "id": 1,
+        "nome": "Tecnologia"
+      },
+      {
+        "id": 2,
+        "nome": "Saúde"
+      },
+      {
+        "id": 3,
+        "nome": "Legislação"
+      },
+      {
+        "id": 4,
+        "nome": "Tratamentos"
+      },
+      {
+        "id": 5,
+        "nome": "Estatística"
+      }
+    ],
+    "pais": [
+      {
+        "id": 1,
+        "nome": "Brasil"
+      },
+      {
+        "id": 2,
+        "nome": "Estados Unidos"
+      },
+      {
+        "id": 3,
+        "nome": "China"
+      },
+      {
+        "id": 4,
+        "nome": "Reino Unido"
+      }
+    ],
+    "fonte": [
+      {
+        "id": 1,
+        "nome": "Ministério da Saúde"
+      },
+      {
+        "id": 2,
+        "nome": "OMS"
+      },
+      {
+        "id": 3,
+        "nome": "CNN Saúde"
+      },
+      {
+        "id": 4,
+        "nome": "INCA"
+      }
+    ]
+  },
+  "rankingProfissionais": [
+    {
+      "id": "1",
+      "nome": "Dr. Gustavo Martins",
+      "especialidade": "Pneumologista",
+      "notaMedia": 4.9,
+      "numeroAvaliacoes": 141,
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "imagemPerfil": "/codigo/public/assets/images/gustavo.jpeg",
+      "descricao": "Racional, focado e direto. Acredita que um bom recurso digital, com embasamento científico, pode complementar o tratamento médico contra o tabagismo.",
+      "certificadoVerificado": true,
+      "email": "gustavo.martins@gmail.com",
+      "whatsapp": "(11) 91234-5678"
+    },
+    {
+      "id": "2",
+      "nome": "Camila Nogueira",
+      "especialidade": "Psicóloga",
+      "notaMedia": 4.8,
+      "numeroAvaliacoes": 109,
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "imagemPerfil": "/codigo/public/assets/images/camila.jpeg",
+      "descricao": "Empática, paciente e comunicativa. Acredita em abordagens mais humanizadas com depoimentos e reflexões que respeitam o tempo de cada pessoa.",
+      "certificadoVerificado": true,
+      "email": "camila.nogueira@gmail.com",
+      "whatsapp": "(31) 99876-5432"
+    },
+    {
+      "id": "3",
+      "nome": "Rafael Souza",
+      "especialidade": "Psicólogo",
+      "notaMedia": 4.7,
+      "numeroAvaliacoes": 95,
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "imagemPerfil": "/codigo/public/assets/images/rafael.jpeg",
+      "descricao": "Dedicado e acolhedor, auxilia pacientes com técnicas de controle de ansiedade e suporte durante o processo de cessação do fumo.",
+      "certificadoVerificado": true,
+      "email": "rafael.souza@gmail.com",
+      "whatsapp": "(41) 98765-4321"
+    },
+    {
+      "id": "4",
+      "nome": "Dra. Ana Paula Lima",
+      "especialidade": "Cardiologista",
+      "notaMedia": 4.6,
+      "numeroAvaliacoes": 79,
+      "cidade": "Fortaleza",
+      "estado": "CE",
+      "imagemPerfil": "/codigo/public/assets/images/ana.jpeg",
+      "descricao": "Especialista em prevenção cardiovascular, focada em orientar pacientes sobre os riscos do tabagismo e melhorar a qualidade de vida",
+      "certificadoVerificado": true,
+      "email": "ana.paula.lima@gmail.com",
+      "whatsapp": "(85) 91234-8765"
+    },
+    {
+      "id": "1750629566169",
+      "nome": "ProfissionalSaude1",
+      "especialidade": "Pneumologista",
+      "cidade": "Diamantina",
+      "estado": "MG",
+      "descricao": "Tranquilo, respeitoso e dedicado. Atua com foco no bem-estar emocional do paciente, incentivando pequenas vitórias no dia a dia.",
+      "whatsapp": "3199998-0078",
+      "email": "profissionalsaude1@exemplo.com",
+      "certificadoVerificado": false,
+      "notaMedia": 0,
+      "numeroAvaliacoes": 0
+    }
+  ],
+  "desafios": [
+    {
+      "id": "1",
+      "titulo": "Motivos para parar",
+      "descricao": "Escreva uma lista com 10 motivos para parar de fumar e cole em um lugar visível.",
+      "pontos": 10
+    },
+    {
+      "id": "2",
+      "titulo": "Substituição consciente",
+      "descricao": "Escolha um alimento saudável para substituir o cigarro quando sentir vontade. Use durante a semana.",
+      "pontos": 10
+    },
+    {
+      "id": "3",
+      "titulo": "Diário da vontade",
+      "descricao": "Anote toda vez que sentir vontade de fumar. Registre horário, local e emoção. Reflita sobre os gatilhos.",
+      "pontos": 12
+    },
+    {
+      "id": "4",
+      "titulo": "Sem cigarro após o café",
+      "descricao": "Durante essa semana, evite fumar após tomar café ou outras bebidas que costumam te dar vontade.",
+      "pontos": 13
+    },
+    {
+      "id": "5",
+      "titulo": "Caminhada antistress",
+      "descricao": "Faça ao menos 3 caminhadas de 30 minutos nesta semana para reduzir a ansiedade.",
+      "pontos": 14
+    },
+    {
+      "id": "6",
+      "titulo": "Respiração consciente",
+      "descricao": "Pratique respiração profunda ou meditação por 10 minutos, 5 dias da semana.",
+      "pontos": 15
+    },
+    {
+      "id": "7",
+      "titulo": "Livre de cinzeiros",
+      "descricao": "Retire todos os cinzeiros, isqueiros e embalagens de cigarro visíveis da sua casa.",
+      "pontos": 10
+    },
+    {
+      "id": "8",
+      "titulo": "Conversa com ex-fumante",
+      "descricao": "Converse com alguém que parou de fumar e pergunte como foi a experiência e as dificuldades.",
+      "pontos": 12
+    },
+    {
+      "id": "9",
+      "titulo": "Meta de redução",
+      "descricao": "Se ainda está fumando, reduza em 30% a quantidade de cigarros por dia. Registre o progresso.",
+      "pontos": 14
+    },
+    {
+      "id": "10",
+      "titulo": "Alerta de gatilho",
+      "descricao": "Identifique 3 situações que disparam sua vontade de fumar e escreva 1 estratégia para cada.",
+      "pontos": 12
+    },
+    {
+      "id": "11",
+      "titulo": "Hidratação consciente",
+      "descricao": "Beba pelo menos 8 copos de água por dia e evite bebidas que aumentam a vontade de fumar.",
+      "pontos": 11
+    },
+    {
+      "id": "12",
+      "titulo": "Dia sem cigarro",
+      "descricao": "Escolha um dia da semana para não fumar nenhum cigarro. Prepare-se para esse desafio.",
+      "pontos": 13
+    },
+    {
+      "id": "13",
+      "titulo": "Atividade manual",
+      "descricao": "Dedique 1h por dia a uma atividade que ocupe suas mãos (desenhar, bordar, montar algo, etc).",
+      "pontos": 13
+    },
+    {
+      "id": "14",
+      "titulo": "Crie um mantra",
+      "descricao": "Crie uma frase curta que te motive a parar de fumar. Repita para si sempre que sentir vontade.",
+      "pontos": 10
+    },
+    {
+      "id": "15",
+      "titulo": "Post-it motivador",
+      "descricao": "Cole lembretes motivacionais pela casa (espelho, geladeira, celular). Reforce sua decisão.",
+      "pontos": 11
+    },
+    {
+      "id": "16",
+      "titulo": "Evite ambientes",
+      "descricao": "Evite por uma semana lugares ou grupos onde o fumo é comum. Observe como se sente.",
+      "pontos": 12
+    },
+    {
+      "id": "17",
+      "titulo": "Playlist de superação",
+      "descricao": "Monte uma playlist com músicas que te motivam a superar desafios e ouça quando sentir vontade.",
+      "pontos": 10
+    },
+    {
+      "id": "18",
+      "titulo": "Compromisso público",
+      "descricao": "Conte para 3 pessoas próximas que está tentando parar. Peça apoio e evite julgamentos.",
+      "pontos": 12
+    },
+    {
+      "id": "19",
+      "titulo": "Meta sem cigarro pós-refeição",
+      "descricao": "Durante a semana, não fume após as refeições. Troque esse hábito por um chá, fruta ou caminhada.",
+      "pontos": 14
+    },
+    {
+      "id": "20",
+      "titulo": "Visualize seu futuro",
+      "descricao": "Escreva como imagina sua vida 1 ano após parar de fumar. Quais melhorias você espera?",
+      "pontos": 15
+    }
+  ],
+  "depoimentos": [
+    {
+      "id": "7ed1",
+      "nome": "Exfumante1",
+      "mensagem": "Foram 15 anos fumando. Acordava e o primeiro pensamento era acender um cigarro. Eu achava que aquilo me acalmava, me ajudava a pensar... mas na verdade só me prendia. Quando comecei a sentir falta de ar subindo uma escada ou ao brincar com meu filho, percebi que algo estava errado. Foi difícil. Tive recaídas, dias em que pensei em desistir, mas fui aprendendo a substituir o cigarro por pequenas vitórias: um café sem cigarro, um passeio ao ar livre, a primeira semana limpa. Hoje faz dois anos que parei. Recuperei o fôlego, o paladar e, principalmente, o orgulho de mim mesmo. Se eu consegui, qualquer um pode conseguir.",
+      "data": "2025-06-22T21:57:18.059Z",
+      "usuarioId": "1"
+    },
+    {
+      "id": "1bac",
+      "nome": "Anônimo",
+      "mensagem": "Comecei a fumar na adolescência, achando que era algo 'legal', que me deixava mais adulto. Nunca pensei que aos 40 anos eu estaria lutando contra a dependência que aquilo causou. O que me fez parar não foi uma doença ou uma bronquite forte — foi minha filha de 7 anos me pedindo, com lágrimas nos olhos, que eu parasse de fumar para não morrer cedo. Aquilo me quebrou por dentro. Decidi procurar ajuda, entrei em um grupo de apoio e usei tudo o que pude: aplicativos, terapias, desafios semanais. Cada dia foi uma batalha. Mas hoje, já fazem 11 meses que não fumo. Minha saúde melhorou, mas mais que isso: eu estou presente, inteiro, para minha família. E isso não tem preço.",
+      "data": "2025-06-22T22:08:43.544Z",
+      "usuarioId": "d1c1"
+    }
+  ]
+}

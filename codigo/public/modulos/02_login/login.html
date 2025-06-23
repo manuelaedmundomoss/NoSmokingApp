@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> NoSmoking - Login/Cadastro </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/codigo/public/modulos/02_login/login.css">
+
+  <style>
+    .entrar-conta {
+      display: none;
+      /* Esconde o formulário de login inicialmente */
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- Formulário: Criar conta -->
+    <div class="conteudo criar-conta">
+      <p class="descricao"> Bem vindo(a) ao <span class="verde"> NoSmoking </span></p>
+      <h2 class="titulo"> Crie uma conta </h2>
+
+      <form class="form">
+        <input type="text" placeholder="Nome" id="cadastroNome">
+        <input type="email" placeholder="Email" id="cadastroEmail">
+        <select id="categoria" name="categoria" required>
+          <option value="" disabled selected hidden> Categoria </option>
+          <option value="fumante"> Fumante </option>
+          <option value="ex-fumante"> Ex-fumante </option>
+          <option value="profissional"> Profissional da saúde </option>
+        </select>
+        <input type="password" placeholder="Senha" id="cadastroSenha">
+        <button class="btn" id="bt-criar" type="submit"> Criar </button>
+      </form>
+      <div class="separator" id="ent"></div>
+      <div class="acesso">
+        <p class="descricao"> Já possui uma conta?</p>
+        <p class="log" id="fazer-login"> Fazer Login </p>
+      </div>
+    </div>
+    <!-- Formúlario: Entrar em conta -->
+    <div class="conteudo entrar-conta">
+      <p class="descricao"> Bem vindo(a) ao <span class="verde"> NoSmoking </span></p>
+      <h2 class="titulo"> Entre em uma conta </h2>
+
+      <form class="form">
+        <input type="email" placeholder="Email" id="loginEmail">
+        <input type="password" placeholder="Senha" id="loginSenha">
+        <button class="btn" id="bt-entrar"> Entrar </button>
+        <p class="descricao" id="esqueceu"><a href="#"> Esqueceu sua senha? </a></p>
+      </form>
+      <div class="separator" id="ent"></div>
+      <div class="acesso">
+        <p class="descricao"> Não possui uma conta?</p>
+        <p class="log" id="cadastrar"> Cadastre-se </p>
+      </div>
+    </div>
+  </div>
+  <!-- Popup: Mudar senha-->
+  <dialog class="popup" id="popupSenha">
+    <div class="popup-header">
+      <h3>Redefinir Senha</h3>
+      <button class="popup-close" id="fecharPopupSenha">&times;</button>
+    </div>
+    <div class="popup-content">
+      <form id="formRedefinir">
+
+        <div class="input-group">
+          <label for="emailRedefinir">E-mail cadastrado</label>
+          <input type="email" id="emailRedefinir" required>
+        </div>
+        <div class="input-group">
+          <label for="novaSenhaInput">Nova Senha</label>
+          <input type="password" id="novaSenhaInput" required minlength="6">
+        </div>
+        <div class="input-group">
+          <label for="confirmarSenhaInput">Confirmar Nova Senha</label>
+          <input type="password" id="confirmarSenhaInput" required minlength="6">
+        </div>
+        <div class="popup-buttons">
+          <button type="button" class="popupSenha-btn" id="cancelarSenha">Cancelar</button>
+          <button type="submit" class="popupSenha-btn" id="confirmarBtn">Confirmar</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <!--Script para alternar formulários-->
+  <script>
+document.addEventListener('DOMContentLoaded', async function () {
+  const criarConta = document.querySelector('.criar-conta');
+  const entrarConta = document.querySelector('.entrar-conta');
+  const fazerLogin = document.getElementById('fazer-login');
+  const cadastrar = document.getElementById('cadastrar');
+
+  function mostrarLogin() {
+    if (criarConta) criarConta.style.display = 'none';
+    if (entrarConta) entrarConta.style.display = 'block';
+  }
+
+  function mostrarCadastro() {
+    if (criarConta) criarConta.style.display = 'block'; 
+    if (entrarConta) entrarConta.style.display = 'none'; 
+  }
+
+  if (fazerLogin) {
+    fazerLogin.addEventListener('click', function (e) {
+      e.preventDefault();
+      mostrarLogin();
+    });
+  }
+
+  if (cadastrar) { 
+    cadastrar.addEventListener('click', function (e) {
+      e.preventDefault();
+      mostrarCadastro();
+    });
+  }
+
+  try {
+    const usuarioLocal = JSON.parse(localStorage.getItem('usuarioLogado'));
+    if (usuarioLocal && usuarioLocal.id) {
+      const response = await fetch(`http://localhost:3000/usuarios/${usuarioLocal.id}`);
+      if (!response.ok) throw new Error('Erro ao buscar usuário logado');
+      const usuarioServidor = await response.json();
+
+      if (usuarioServidor.logado) {
+        window.location.href = '/codigo/public/modulos/00_index/index.html';
+      } else {
+        mostrarCadastro();
+      }
+    } else {
+      mostrarCadastro();
+    }
+  } catch (error) {
+    console.error('Erro ao verificar login:', error);
+    mostrarCadastro();
+  }
+
+});
+
+  </script>
+
+  <script src="/codigo/public/modulos/02_login/login.js"></script>
+
+</body>
+
+</html>

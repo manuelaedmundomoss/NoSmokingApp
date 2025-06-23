@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoSmoking - Portal de Notícias</title>
+
+  <!-- LINKS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/codigo/public/modulos/00_index/header.css">
+  <link rel="stylesheet" href="/codigo/public/modulos/01_portal_notícias/noticias.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- CABEÇALHO -->
+  <header style="background-color: #2c3e50;">
+    <nav class="navbar container-fluid align-items-center">
+      <!-- Logo -->
+      <div class="d-flex align-items-center">
+        <a class="nav-link d-flex align-items-center text-white" href="../00_index/index.html">
+          <img src="/codigo/public/assets/images/logoNoSmoke.png" alt="Logo" width="50" height="50" class="me-2">
+          <h1 class="h4 mb-0">NoSmoking</h1>
+        </a>
+      </div>
+
+      <div class="flex-grow-1 justify-content-center d-flex" id="menuMobile">
+        <ul class="nav flex-column flex-md-row align-items-center mb-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/codigo/public/modulos/01_projecaoFuturo/futuro.html">Projete seu
+              futuro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/codigo/public/modulos/01_portal_notícias/portal_noticias.html">Portal
+              de notícias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../02_depoimentos/depoimentos.html">Depoimentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/codigo/public/modulos/02_ranking/ranking.html">Ranking</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- PONTOS + PERFIL-->
+      <div class="cabecalho-pontos-perfil d-flex align-items-center gap-3">
+        <!-- Pontuação -->
+        <a href="/codigo/public/modulos/02_pontuacaoSelos/selos.html" class="text-decoration-none">
+          <div id="PontosF" class="d-flex align-items-center bg-secondary rounded px-2 py-1">
+            <ul class="pontuacao text-white m-0 p-0 d-flex gap-3">
+              <li>
+                <h6 class="mb-0">Pontos</h6>
+              </li>
+              <li>
+                <h6 id="pontuacaoUsuario" class="mb-0">37</h6>
+              </li>
+            </ul>
+          </div>
+        </a>
+
+        <!-- Perfil -->
+        <div class="perfil position-relative">
+          <i class="fa-solid fa-circle-user text-light fs-1" id="perfil" style="cursor: pointer;"></i>
+          <div class="menu-perfil position-absolute bg-white shadow rounded" id="menuPerfil"
+            style="top: 50px; right: 0; z-index: 1000; display: none;">
+            <ul class="list-unstyled m-0">
+              <li class="text-end">
+                <button id="fechar-perfil" class="btn border-0 text-dark" style="margin-right: 5px;"
+                  title="Fechar">✕</button>
+              </li>
+              <li><a class="dropdown-item" href="/codigo/public/modulos/02_perfil/perfil.html" style="color:black">Meu
+                  perfil</a></li>
+              <li><a class="dropdown-item" href="#" id="sair-conta" style="color:black">Sair da conta</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ícone menu mobile -->
+      <div id="icone-menu-mobile" class="me-3" data-bs-toggle="offcanvas" data-bs-target="#menuMobileOffcanvas"
+        style="cursor: pointer;">
+        <i class="fa-solid fa-ellipsis-vertical text-white fs-3"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CABEÇALHO EM TELAS MENORES -->
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="menuMobileOffcanvas"
+    aria-labelledby="menuMobileLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="menuMobileLabel" style="color:white">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+    </div>
+
+    <div class="offcanvas-body d-flex flex-column justify-content-between" style="height: 100%;">
+      <ul class="nav flex-column mb-4">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/codigo/public/modulos/01_projecaoFuturo/futuro.html">Projete seu
+            futuro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/codigo/public/modulos/01_portal_notícias/portal_noticias.html">Portal de
+            notícias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../02_depoimentos/depoimentos.html">Depoimentos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/codigo/public/modulos/02_ranking/ranking.html">Ranking</a>
+        </li>
+      </ul>
+
+      <!-- Pontuação -->
+      <div class="mb-3">
+        <a href="/codigo/public/modulos/02_pontuacaoSelos/selos.html" class="text-decoration-none">
+          <div id="PontosF" class="d-flex align-items-center bg-secondary rounded px-2 py-1">
+            <ul class="pontuacao text-white m-0 p-0 d-flex gap-3">
+              <li>
+                <h6 class="mb-0">Pontos</h6>
+              </li>
+              <li>
+                <h6 id="pontuacaoUsuario" class="mb-0">37</h6>
+              </li>
+            </ul>
+          </div>
+        </a>
+      </div>
+
+      <!-- Perfil -->
+      <div class="perfil">
+        <ul class="list-unstyled m-0">
+          <li><a class="dropdown-item text-white" href="/codigo/public/modulos/02_perfil/perfil.html">Meu perfil</a>
+          </li>
+          <li><a class="dropdown-item text-white" href="#" id="sair-conta-mobile">Sair da conta</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main class="news-portal">
+    <div class="news-header">
+      <h2>Últimas Notícias</h2>
+      <p>Fique por dentro das novidades sobre saúde e bem-estar</p>
+    </div>
+
+    <button id="btnAdicionar" class="btn btn-add">+ Adicionar Notícia</button>
+
+    <div class="filter-container">
+      <div class="filter-row">
+        <div class="filter-group">
+          <label for="filtroAno" class="filter-label">Ano</label>
+          <select id="filtroAno" class="filter-select">
+            <option value="">Todos os anos</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filtroAssunto" class="filter-label">Assunto</label>
+          <select id="filtroAssunto" class="filter-select">
+            <option value="">Todos os assuntos</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filtroPais" class="filter-label">País</label>
+          <select id="filtroPais" class="filter-select">
+            <option value="">Todos os países</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filtroFonte" class="filter-label">Fonte</label>
+          <select id="filtroFonte" class="filter-select">
+            <option value="">Todas as fontes</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="ordenarPor" class="filter-label">Ordenar por</label>
+          <select id="ordenarPor" class="filter-select">
+            <option value="maisRecente">Mais recente</option>
+            <option value="maisAntigo">Mais antigo</option>
+            <option value="maisPopulares">Mais populares</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <section id="listaNoticias" class="news-list"></section>
+  </main>
+
+  <div id="modalNoticia" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalTitle">Adicionar Nova Notícia</h2>
+      <form id="noticiaForm">
+        <input type="hidden" id="noticiaId">
+        <div class="form-group">
+          <label for="titulo">Título*</label>
+          <input type="text" id="titulo" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="descricao">Resumo*</label>
+          <textarea id="descricao" class="form-control" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="conteudo">Conteúdo*</label>
+          <textarea id="conteudo" class="form-control" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="imagem">URL da Imagem*</label>
+          <input type="text" id="imagem" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="data">Data*</label>
+          <input type="date" id="data" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="fonte">Fonte*</label>
+          <input type="text" id="fonte" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="autor">Autor</label>
+          <input type="text" id="autor" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="anoId">Ano*</label>
+          <select id="anoId" class="form-control" required>
+            <option value="1">2023</option>
+            <option value="2">2024</option>
+            <option value="3">2025</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="assuntoId">Assunto*</label>
+          <select id="assuntoId" class="form-control" required>
+            <option value="1">Tecnologia</option>
+            <option value="2">Saúde</option>
+            <option value="3">Legislação</option>
+            <option value="4">Tratamentos</option>
+            <option value="5">Estatística</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="paisId">País*</label>
+          <select id="paisId" class="form-control" required>
+            <option value="1">Brasil</option>
+            <option value="2">Estados Unidos</option>
+            <option value="3">China</option>
+            <option value="4">Reino Unido</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar Notícia</button>
+      </form>
+    </div>
+  </div>
+
+  <button id="limparFiltros" class="btn">Limpar Filtros</button>
+  <button id="voltarTopo" class="btn" style="display:none;position:fixed;bottom:20px;right:20px;">↑ Topo</button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/codigo/public/modulos/00_index/header.js"></script>
+  <script src="/codigo/public/modulos/01_portal_notícias/portal_noticias.js"></script>
+  
+
+
+
+</body>
+
+</html>

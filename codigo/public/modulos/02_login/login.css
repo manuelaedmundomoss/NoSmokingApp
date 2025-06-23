@@ -1,0 +1,235 @@
+/* ÍNICIO das definições gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+html, body {
+  height: 100%;
+  width: 100%;
+}
+  
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#formRedefinir{
+  justify-content: center;
+}
+
+button:hover { 
+  transform: translateY(-2px);
+}
+
+:root { /* CORES PRINCIPAIS DO SITE */
+  --verde-escuro: #5f7a59;
+  --verde-claro: #a8c9a1;
+  --azul-escuro: #2c3e50;
+  --azul-bem-claro:#a9c9e7;
+  --azul-claro: #45607a;
+  --cinza-escuro: #6d6d6d;
+  --cinza-claro: #e0e0e0;
+  --azul-link: #0043a7;
+}
+
+/* INÍCIO da SPRINT 2 @Marcela */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
+  background: linear-gradient(to bottom, var(--cinza-claro), var(--verde-escuro));
+}
+
+.conteudo.criar-conta,
+.conteudo.entrar-conta{
+  padding: 40px;
+  border: none;
+  width: 400px;        
+  min-height: 550px;   
+}
+
+#bt-criar, #bt-entrar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0.5rem 0.6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#bt-entrar {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: var(--cinza-escuro);
+  padding: 20px;
+}
+
+.separator::before {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#bt-criar, #bt-entrar {
+  background-color: var(--verde-escuro);
+  margin-right: auto; 
+  display: block;    
+  width: fit-content; 
+}
+
+#bt-criar:hover, #bt-entrar:hover{
+  background-color: var(--verde-claro);
+}
+
+.conteudo{
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.verde {
+  color: var(--verde-escuro);
+  font-weight: bold;
+}
+
+.titulo {
+  color: var(--verde-escuro);
+  margin: 20px;
+  font-size: 35px;
+}
+
+.descricao {
+  color: var(--cinza-escuro);
+  margin: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select {
+  background-color: var(--cinza-claro);
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  color: #2e2e2e;
+}
+
+select:invalid {
+  color: #6d6d6d;
+}
+
+.formas-registro {
+  list-style-type: none;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.log {
+  color: var(--azul-escuro);
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.log:hover {
+  color: var(--azul-claro);
+}
+
+#popupSenha.popup{
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 10px;
+  background-color: var(--azul-escuro);
+  padding: 0;
+  width: 400px;
+  height: 400px;
+}
+
+.popup-header {
+  background-color: var(--azul-claro);
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.popup-content {
+  padding: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.input-group input {
+  width: 75%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--cinza-claro);
+  background-color: var(--cinza-claro);
+}
+
+.popup-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.popupSenha-btn{
+  padding: 0.5rem 0.6rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--verde-escuro);
+}
+.popupSenha-btn:hover{
+  transition: all 0.3s ease;
+  background-color: var(--verde-claro);
+}
+
+.popup::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+/* FIM da SPRINT 2 @Marcela */
