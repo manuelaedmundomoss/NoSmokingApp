@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!usuarioLogado || !usuarioLogado.id) {
     alert("Você precisa estar logado para ver o diário.");
-    window.location.href = "/codigo/public/modulos/02_login/login.html";
+    window.location.href = "/site/paginas/login.html";
     return;
   }
 
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
       container.innerHTML = `
         <h1 style="font-size: 1.7rem; margin-bottom: 1rem; font-weight: 600; color: var(--azul-escuro); border-bottom: 2px solid var(--verde-claro);
           padding-bottom: 0.5rem;" class="tituloDiario">Meu Diário 
-          <a href="/codigo/public/modulos/01_diarioFumante/diario.html" style="text-decoration: none;">
+          <a href="/site/paginas/diario.html" style="text-decoration: none;">
             <i class="fa-solid fa-book" style="cursor: pointer; color: #a8c9a1; transition: color 0.3s;" onmouseover="this.style.color='#0b633a'" onmouseout="this.style.color='#a8c9a1'"></i>
           </a>
         </h1>

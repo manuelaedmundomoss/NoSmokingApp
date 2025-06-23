@@ -42,8 +42,8 @@ if (carouselDiv) {
           <div class="card shadow mx-auto" style="max-width: 600px;">
             <img src="${noticia.imagem}" class="card-img-top" alt="${noticia.titulo}">
             <div class="card-body">
-              <h5 class="card-title">
-                <a href="/codigo/public/modulos/01_portal_notícias/detalhes_noticias.html?id=${noticia.id}" 
+              <h5 class="card-title"> 
+                <a href="/site/paginas/detalhes_noticias.html?id=${noticia.id}" 
                    style="text-decoration: none; color: inherit;">
                   ${noticia.titulo}
                 </a>

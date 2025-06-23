@@ -7,7 +7,7 @@
   <title> NoSmoking - Login/Cadastro </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/codigo/public/modulos/02_login/login.css">
+  <link rel="stylesheet" href="/site/css/login.css">
 
   <style>
     .entrar-conta {
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       const usuarioServidor = await response.json();
 
       if (usuarioServidor.logado) {
-        window.location.href = '/codigo/public/modulos/00_index/index.html';
+        window.location.href = '/site/index.html';
       } else {
         mostrarCadastro();
       }
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   </script>
 
-  <script src="/codigo/public/modulos/02_login/login.js"></script>
+  <script src="/site/scripts/login.js"></script>
 
 </body>
 

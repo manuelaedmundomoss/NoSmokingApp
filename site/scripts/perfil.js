@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 });
 
                 localStorage.removeItem('usuarioLogado');
-                window.location.href = "/codigo/public/modulos/02_login/login.html";
+                window.location.href = "/site/paginas/login.html";
             } catch (erro) {
                 console.error("Erro ao sair da conta:", erro);
                 alert("Erro ao sair da conta.");
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
 
                 alert("Nenhum usuário logado encontrado.");
-                window.location.href = "/codigo/public/modulos/02_login/login.html";
+                window.location.href = "/site/paginas/login.html";
                 return;
             }
 
@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 });
 
                 localStorage.clear();
-                window.location.href = "/codigo/public/modulos/02_login/login.html";
+                window.location.href = "/site/paginas/login.html";
             } catch (erro) {
                 console.error("Erro ao sair:", erro);
                 alert("Erro ao sair da conta.");

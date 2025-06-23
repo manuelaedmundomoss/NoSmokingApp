@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         usuarioLogado = usuarios.find(usuario => usuario.logado === true);
 
         if (!usuarioLogado) {
-            window.location.href = '/codigo/public/modulos/02_login/login.html';
+            window.location.href = '/site/paginas/login.html';
             return;
         }
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         localStorage.setItem('usuarioLogado', JSON.stringify(usuarioLogado));
     } catch (erro) {
         console.error('Erro ao verificar login dos usuários:', erro);
-        window.location.href = '/codigo/public/modulos/02_login/login.html';
+        window.location.href = '/site/paginas/login.html';
         return;
     }
 
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 });
 
                 localStorage.removeItem('usuarioLogado');
-                window.location.href = '/codigo/public/modulos/02_login/login.html';
+                window.location.href = '/site/paginas/login.html';
             } catch (error) {
                 console.error('Erro ao sair da conta:', error);
                 alert('Erro ao sair da conta.');
@@ -169,24 +169,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     function atualizarImagemPlanta(diasSemFumar) {
-        let imagem = '/codigo/public/assets/images/planta1.png';
+        let imagem = '/site/imagens/planta1.png';
 
         if (diasSemFumar >= 360) {
-            imagem = '/codigo/public/assets/images/planta7.png';
+            imagem = '/site/imagens/planta7.png';
         } else if (diasSemFumar >= 210) {
-            imagem = '/codigo/public/assets/images/planta6.png';
+            imagem = '/site/imagens/planta6.png';
         } else if (diasSemFumar >= 150) {
-            imagem = '/codigo/public/assets/images/planta5.png';
+            imagem = '/site/imagens/planta5.png';
         } else if (diasSemFumar >= 90) {
-            imagem = '/codigo/public/assets/images/planta4.png';
+            imagem = '/site/imagens/planta4.png';
         } else if (diasSemFumar >= 30) {
-            imagem = '/codigo/public/assets/images/planta3.png';
+            imagem = '/site/imagens/planta3.png';
         } else if (diasSemFumar >= 14) {
-            imagem = '/codigo/public/assets/images/planta2.png';
+            imagem = '/site/imagens/planta2.png';
         } else if (diasSemFumar >= 7) {
-            imagem = '/codigo/public/assets/images/planta1.png';
+            imagem = '/site/imagens/planta1.png';
         } else {
-            imagem = '/codigo/public/assets/images/planta1.png';
+            imagem = '/site/imagens/planta1.png';
         }
 
         plantinha.src = imagem;

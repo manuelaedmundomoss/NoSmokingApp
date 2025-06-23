@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         usuarioLogado = usuarios.find(usuario => usuario.logado === true);
 
         if (!usuarioLogado) {
-            window.location.href = '/codigo/public/modulos/02_login/login.html';
+            window.location.href = '/site/paginas/login.html';
             return;
         }
 
         localStorage.setItem('usuarioLogado', JSON.stringify(usuarioLogado));
     } catch (erro) {
         console.error('Erro ao verificar login dos usuários:', erro);
-        window.location.href = '/codigo/public/modulos/02_login/login.html';
+        window.location.href = '/site/paginas/login.html';
         return;
     }
 
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
             }
 
-            window.location.href = '/codigo/public/modulos/02_login/login.html';
+            window.location.href = '/site/paginas/login.html';
         } catch (error) {
             console.error('Erro ao sair da conta:', error);
             alert('Erro ao sair da conta.');

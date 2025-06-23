@@ -151,7 +151,7 @@ async function fazerLogin(event) {
     }
 
     setTimeout(() => {
-      window.location.href = '/codigo/public/modulos/00_index/index.html';
+      window.location.href = '/site/index.html';
     }, 100);
 
   } catch (error) {
@@ -162,7 +162,7 @@ async function fazerLogin(event) {
 
 // Redireciona por categoria
 function redirecionarPorCategoria() {
-  window.location.href = '/codigo/public/modulos/00_index/index.html';
+  window.location.href = '/site/index.html';
 }
 
 // Redefinir senha
